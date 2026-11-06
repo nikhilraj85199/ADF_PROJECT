@@ -1,0 +1,17 @@
+{
+	"name": "FileServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Azure ADF",
+			"userId": "nikhilrraajj@gmail.com",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjNDM3NmI3NS04N2IyLTQyZWItYWI3OC1mMzM4NjU1MWUwMmMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "azureprojectir",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

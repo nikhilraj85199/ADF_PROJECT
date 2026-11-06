@@ -1,0 +1,23 @@
+{
+	"name": "Ds_Api_Adls_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_project_adls",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "nikhil_project_datasets"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "github",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

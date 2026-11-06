@@ -1,0 +1,15 @@
+{
+	"name": "nikhil-adf01",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "297f7d15-2d0f-4720-b7ce-b6746be9f21f",
+		"tenantId": "1ebc7815-dc66-412d-9389-a07d71bdf17e"
+	}
+}

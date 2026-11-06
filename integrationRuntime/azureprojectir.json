@@ -1,0 +1,6 @@
+{
+	"name": "azureprojectir",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

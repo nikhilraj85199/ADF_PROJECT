@@ -1,0 +1,17 @@
+{
+	"name": "ls_srinivaspc",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\Srinivas2.0\\Anshu-Lamba\\Source_Files",
+			"userId": "desktop-1s0lksa\\dell",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjMzFjNGYwYy05OTVhLTRiN2QtYmM5Ni1iYzRmMDI5YzAyMjMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "srinivas-SHIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "Ds_sql_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_project_adls",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "nikhil_project_datasets"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sql",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,24 @@
+{
+	"name": "Ds_json_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_project_adls",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "nikhil_project_datasets"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "DimAirport.json",
+				"folderPath": "github/anshlambagit/AnshLambaYoutube/refs/heads/main/ADF_Project",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
