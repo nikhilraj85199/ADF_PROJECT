@@ -1,0 +1,69 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "nikhil-adf01"
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"FileServer1_password": {
+			"value": ""
+		},
+		"ls_adlsgen2_accountKey": {
+			"value": ""
+		},
+		"ls_azuresqldb_password": {
+			"value": ""
+		},
+		"ls_project_adls_accountKey": {
+			"value": ""
+		},
+		"ls_srinivaspc_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "nikhilrajserver123.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "nikhilrajdb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "nikhilraj"
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"value": "C:\\Azure ADF"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"value": "nikhilrraajj@gmail.com"
+		},
+		"LS_Api_call_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"ls_adlsgen2_properties_typeProperties_url": {
+			"value": "https://nikhiladlsgen2.dfs.core.windows.net/"
+		},
+		"ls_azuresqldb_properties_typeProperties_server": {
+			"value": "srinivassqlserver68.database.windows.net"
+		},
+		"ls_azuresqldb_properties_typeProperties_database": {
+			"value": "srinivas-database"
+		},
+		"ls_azuresqldb_properties_typeProperties_userName": {
+			"value": "Srinivas"
+		},
+		"ls_github_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"ls_project_adls_properties_typeProperties_url": {
+			"value": "https://nikhilprojectstorage1.dfs.core.windows.net/"
+		},
+		"ls_srinivaspc_properties_typeProperties_host": {
+			"value": "C:\\Srinivas2.0\\Anshu-Lamba\\Source_Files"
+		},
+		"ls_srinivaspc_properties_typeProperties_userId": {
+			"value": "desktop-1s0lksa\\dell"
+		}
+	}
+}

@@ -1,0 +1,222 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "nikhil-adf01"
+		},
+		"AzureSqlDatabase1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
+		},
+		"FileServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'FileServer1'"
+		},
+		"ls_adlsgen2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_adlsgen2'"
+		},
+		"ls_azuresqldb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_azuresqldb'"
+		},
+		"ls_project_adls_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_project_adls'"
+		},
+		"ls_srinivaspc_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_srinivaspc'"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "nikhilrajserver123.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "nikhilrajdb"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "nikhilraj"
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "C:\\Azure ADF"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "nikhilrraajj@gmail.com"
+		},
+		"LS_Api_call_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/"
+		},
+		"ls_adlsgen2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://nikhiladlsgen2.dfs.core.windows.net/"
+		},
+		"ls_azuresqldb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "srinivassqlserver68.database.windows.net"
+		},
+		"ls_azuresqldb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "srinivas-database"
+		},
+		"ls_azuresqldb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Srinivas"
+		},
+		"ls_github_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/"
+		},
+		"ls_project_adls_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://nikhilprojectstorage1.dfs.core.windows.net/"
+		},
+		"ls_srinivaspc_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "C:\\Srinivas2.0\\Anshu-Lamba\\Source_Files"
+		},
+		"ls_srinivaspc_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "desktop-1s0lksa\\dell"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "nikhil-adf01_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureSqlDatabase1_password": {
+						"value": "[parameters('AzureSqlDatabase1_password')]"
+					},
+					"ls_adlsgen2_accountKey": {
+						"value": "[parameters('ls_adlsgen2_accountKey')]"
+					},
+					"ls_azuresqldb_password": {
+						"value": "[parameters('ls_azuresqldb_password')]"
+					},
+					"ls_project_adls_accountKey": {
+						"value": "[parameters('ls_project_adls_accountKey')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_server": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_server')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_database": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_database')]"
+					},
+					"AzureSqlDatabase1_properties_typeProperties_userName": {
+						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"LS_Api_call_properties_typeProperties_url": {
+						"value": "[parameters('LS_Api_call_properties_typeProperties_url')]"
+					},
+					"ls_adlsgen2_properties_typeProperties_url": {
+						"value": "[parameters('ls_adlsgen2_properties_typeProperties_url')]"
+					},
+					"ls_azuresqldb_properties_typeProperties_server": {
+						"value": "[parameters('ls_azuresqldb_properties_typeProperties_server')]"
+					},
+					"ls_azuresqldb_properties_typeProperties_database": {
+						"value": "[parameters('ls_azuresqldb_properties_typeProperties_database')]"
+					},
+					"ls_azuresqldb_properties_typeProperties_userName": {
+						"value": "[parameters('ls_azuresqldb_properties_typeProperties_userName')]"
+					},
+					"ls_github_properties_typeProperties_url": {
+						"value": "[parameters('ls_github_properties_typeProperties_url')]"
+					},
+					"ls_project_adls_properties_typeProperties_url": {
+						"value": "[parameters('ls_project_adls_properties_typeProperties_url')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "nikhil-adf01_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"FileServer1_password": {
+						"value": "[parameters('FileServer1_password')]"
+					},
+					"ls_srinivaspc_password": {
+						"value": "[parameters('ls_srinivaspc_password')]"
+					},
+					"FileServer1_properties_typeProperties_host": {
+						"value": "[parameters('FileServer1_properties_typeProperties_host')]"
+					},
+					"FileServer1_properties_typeProperties_userId": {
+						"value": "[parameters('FileServer1_properties_typeProperties_userId')]"
+					},
+					"ls_srinivaspc_properties_typeProperties_host": {
+						"value": "[parameters('ls_srinivaspc_properties_typeProperties_host')]"
+					},
+					"ls_srinivaspc_properties_typeProperties_userId": {
+						"value": "[parameters('ls_srinivaspc_properties_typeProperties_userId')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'nikhil-adf01_ArmTemplate_0')]"
+			]
+		},
+		{
+			"name": "nikhil-adf01_ArmTemplate_2",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'nikhil-adf01_ArmTemplate_1')]"
+			]
+		}
+	]
+}
